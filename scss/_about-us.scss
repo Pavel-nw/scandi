@@ -1,0 +1,60 @@
+.about-us__title {
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 50px;
+text-transform: uppercase;
+color: $color_1;
+padding-top: 65px;
+padding-bottom: 40px;
+text-align: center;
+}
+.about-us__info {
+display: flex;
+justify-content: space-between;
+}
+.about-us__text {
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: $color_1;
+max-width: 528px;
+
+&-top{
+padding-bottom: 30px;
+}
+}
+
+.about-us__bottom{
+background-color: #8D7370;
+margin-top: 15px;
+}
+
+.about-us__items{
+min-height: 273px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.about-us__item {
+display: flex;
+flex-direction: column-reverse;
+
+}
+.about-us__reach {
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.about-us__num {
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 62px;
+color: #FFFFFF;
+margin: 0 auto;
+}

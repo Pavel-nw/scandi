@@ -1,0 +1,74 @@
+.team__block{
+background-color: #E2C4BA;
+margin-top: 50px;
+}
+
+.team__items {
+display: grid;
+grid-template-columns: 320px 320px 320px;
+column-gap: 38px;
+}
+
+.team__item-text{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: $color_1;
+}
+
+
+.team__title{
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 50px;
+text-transform: uppercase;
+color: $color_1;
+text-align: center;
+padding-bottom: 42px;
+padding-top: 50px;
+}
+
+
+.team__steps-list{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 285px));
+column-gap: 20px;
+padding-bottom: 80px;
+}
+
+.steam__steps-item{
+text-align: center;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: $color_1;
+position: relative;
+}
+
+.team__steps-num{
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 30px;
+color: #FFFFFF;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:#8D7370;
+margin: 0 auto 20px auto;
+}
+
+.team__steps-text{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: $color_1;
+text-align: center;
+}

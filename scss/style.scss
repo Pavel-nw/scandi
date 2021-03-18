@@ -1,0 +1,53 @@
+$color_1:#533738;
+
+@import "header";
+@import "intro";
+@import "about-us";
+@import "works";
+@import "team";
+@import "reviews";
+@import "contact";
+@import "footer";
+
+
+
+.container{
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.container-min{
+width: 100%;
+max-width: 1036px;
+margin: 0 auto;
+}
+
+.wrapper{
+width: 100%;
+font-family: 'Montserrat', sans-serif;
+background-color: #E5E5E5;
+}
+
+
+body,ul,ol,h1,h2,h3,p,span,blockquote{
+margin: 0;
+padding: 0;
+}
+
+ul,ol{
+list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+div{
+box-sizing: border-box;
+}
+
+img{
+display: block;
+}
+

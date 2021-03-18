@@ -1,0 +1,42 @@
+.input{
+border: none;
+min-width: 508px;
+border-bottom:1px solid #ffffff;
+background: none;
+margin-bottom: 35px;
+}
+
+.contact__block{
+background-color: #8D7370;
+}
+
+.contact__form{
+display: flex;
+}
+
+.contact__form-request{
+padding-right: 20px;
+padding-top: 50px;
+}
+
+.contact__form-title{
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 50px;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 24px;
+}
+
+.contact__form-text{
+max-width: 507px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: #ffffff;
+opacity: 0.6;
+margin-bottom: 44px;
+}
+

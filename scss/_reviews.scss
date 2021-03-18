@@ -1,0 +1,71 @@
+.reviews__fb-inner{
+max-width: 407px;
+margin-right: 20px;
+padding-top: 90px;
+}
+
+.reviews__fb-item{
+margin-bottom: 30px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: $color_1;
+}
+
+.reviews__fb-person{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: $color_1;
+text-decoration: none;
+}
+
+.reviews__title{
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 50px;
+text-transform: uppercase;
+color: $color_1;
+text-align: center;
+margin-top: 65px;
+margin-bottom: 40px;
+}
+
+.reviews__img-item:nth-child(1){
+margin-bottom: 20px;
+}
+
+.reviews__fb{
+display: flex;
+justify-content: center;
+position: relative;
+padding-bottom: 65px;
+
+}
+
+.reviews__fb::before{
+content: "";
+background-image: url(../img/Arrow1.svg);
+background-repeat: no-repeat;
+position: absolute;
+display: block;
+width: 72px;
+height: 72px;
+top:38%;
+left: 0;
+}
+
+.reviews__fb::after{
+content: "";
+background-image: url(../img/Arrow2.svg);
+background-repeat: no-repeat;
+position: absolute;
+display: block;
+width: 72px;
+height: 72px;
+top:38%;
+right: 0;
+}

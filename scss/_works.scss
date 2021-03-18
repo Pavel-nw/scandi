@@ -1,0 +1,123 @@
+.grid{
+   display: grid;
+   column-gap: 20px;
+   row-gap: 30px;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-areas: "a a . . . . "
+                        "b b c c c c "
+                        "d d d d e e "
+                        ". f f . . . ";
+}
+
+
+.grid__title{
+grid-area: a;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+text-transform: uppercase;
+color: $color_1;
+min-width: 332px;
+margin-bottom: 20px;
+margin-top: 65px;
+}
+
+.grid__item-bed{
+grid-area: b;
+max-width: 488px;
+max-height: 451px;
+position: relative;
+}
+
+.grid__hover-title{
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+color: #FFFFFF;
+max-width: 270px;
+margin-bottom: 30px;
+}
+
+.grid__hover-text{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: #FFFFFF;
+max-width: 418px;
+}
+
+.grid__hover-item{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+opacity: 0;
+color: #FFFFFF;
+background:  rgba(100, 72, 69, 0.8);
+transition: all .5s;
+}
+
+.grid__hover-item:hover{
+opacity: 1;
+}
+
+.grid__item img{
+display: block;
+}
+
+
+.grid__item-kitchen{
+grid-area: c;
+justify-self: end;
+max-width: 692px;
+min-height: 451px;
+
+}
+.grid__item-hall{
+grid-area: d;
+max-width: 692px;
+min-height: 451px;
+}
+.grid__item-bath{
+grid-area: e;
+justify-self: end;
+max-width: 488px;
+max-height: 451px;
+
+}
+.grid__item-button{
+grid-area: f;
+}
+
+.grid__button{
+border: none;
+background: none;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+color: $color_1;
+min-width: 294px;
+position: relative;
+}
+
+.grid__button::after{
+content: "";
+background-image: url(../img/Arrow3.svg);
+background-repeat: no-repeat;
+position: absolute;
+display: block;
+width: 60px;
+height: 15px;
+bottom: 10px;
+left: 256px;
+
+}
+

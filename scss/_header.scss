@@ -1,0 +1,32 @@
+.header{
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+z-index: 100;
+}
+
+.header__logo{
+display: flex;
+align-items: center;
+}
+
+.header__inner-top {
+font-size: 16px;
+line-height: 20px;
+font-weight: normal;
+color: $color_1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 38px;
+}
+
+.header__menu {
+display: flex;
+
+&-item{
+margin-right: 22px;
+color: $color_1;   
+}
+}
