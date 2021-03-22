@@ -41,6 +41,26 @@
 .header__menu-item {
   margin-right: 22px;
   color: #533738;
+  position: relative;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.header__menu-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.header__menu-item:hover::after {
+  width: 100%;
 }
 
 .intro {
@@ -85,6 +105,13 @@
   background-color: #CC8B86;
   border: none;
   display: inline-block;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #CC8B86;
+  -webkit-box-shadow: inset 0 0 0 1px #080808;
+          box-shadow: inset 0 0 0 1px #080808;
 }
 
 .about-us__title {

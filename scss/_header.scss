@@ -28,5 +28,24 @@ display: flex;
 &-item{
 margin-right: 22px;
 color: $color_1;   
+position: relative;
+line-height: 2;
+cursor: pointer;
 }
+}
+
+.header__menu-item::after{
+content: "";
+display: block;
+position: absolute;
+left: 0;
+top: 25px;
+width: 0;
+height: 1px;
+background-color: black;
+transition: width 0.3s ease-out;
+}
+
+.header__menu-item:hover::after{
+width: 100%;
 }
