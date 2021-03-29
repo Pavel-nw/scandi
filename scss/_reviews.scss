@@ -13,7 +13,7 @@ line-height: 30px;
 color: $color_1;
 }
 
-.reviews__fb-person{
+.reviews__fb-user{
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -41,32 +41,49 @@ margin-bottom: 20px;
 .reviews__fb{
 display: flex;
 justify-content: center;
-position: relative;
 padding-bottom: 65px;
-
 }
 
-.reviews__fb::before{
-content: "";
-background-image: url(../img/Arrow1.svg);
-background-repeat: no-repeat;
+.reviews__item{
+position: relative;
+}
+.reviews__pagination {
 position: absolute;
-display: block;
-width: 72px;
-height: 72px;
-top:38%;
+top: 48%;
 left: 0;
+display: flex;
+justify-content: space-between;
+width: 100%;
+transform: translateY(-50%);
 }
 
-.reviews__fb::after{
-content: "";
-background-image: url(../img/Arrow2.svg);
-background-repeat: no-repeat;
-position: absolute;
-display: block;
-width: 72px;
-height: 72px;
-top:38%;
-right: 0;
+.reviews__button {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+width: 68px;
+height: 68px;
+border: 2px solid #cc8b86;
+border: none;
+border-radius: 50%;
+background-color: #cc8b86;
 }
 
+.reviews__button:hover {
+background-color: white;
+}
+
+.reviews__button:hover path,
+.reviews__button:focus path {
+fill: #cc8b86;
+}
+
+.reviews__button:focus {
+border: 2px solid #cc8b86;
+background-color: white;
+}
+
+.reviews__button-prev svg {
+transform: rotate(180deg);
+}

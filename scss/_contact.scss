@@ -1,15 +1,8 @@
-.input{
-border: none;
-min-width: 508px;
-border-bottom:1px solid #ffffff;
-background: none;
-margin-bottom: 35px;
-}
-
-.contact__block{
+.contact{
+color: white;
 background-color: #8D7370;
-}
 
+}
 .contact__form{
 display: flex;
 }
@@ -39,4 +32,34 @@ color: #ffffff;
 opacity: 0.6;
 margin-bottom: 44px;
 }
+.contact__form-item p{
+position: relative;
+margin: 0;
+margin-bottom: 24px;
+}
+.contact__text-input{
+display: block;
+padding-top: 10px;
+padding-bottom: 13px;
+font-size: 18px;
+width: 100%;
+border: none;
+border-bottom: 1px solid white;
+background-color: transparent;
+color: white;
+}
 
+.contact__label-input{
+position: absolute;
+font-size: 18px;
+bottom: 11px;
+left: 0;
+transition: 0.2s ease-in;
+}
+
+.contact__text-input:focus + .contact__label-input,
+.contact__text-input:valid:not(:placeholder-shown) + .contact__label-input{
+opacity: 0;
+bottom: 40px;
+transition: 0.2s ease-in;
+}
